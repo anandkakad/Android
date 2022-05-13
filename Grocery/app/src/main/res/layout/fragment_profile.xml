@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment.ProfileFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/olivedrab"
+                app:errorTextColor="@color/red"
+                app:hintTextColor="@color/olivedrab"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingClass,MissingConstraints"
+                tools:layout_editor_absoluteX="16dp">
+
+                <EditText
+                    android:id="@+id/edit_txt_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawablePadding="10dip"
+                    android:hint="@string/edit_txt_hint_full_name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:theme="@style/MyProfileEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_mob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/olivedrab"
+                app:errorTextColor="@color/red"
+                app:hintTextColor="@color/olivedrab"
+                app:layout_constraintEnd_toStartOf="@+id/textInputLayout_alter_mob"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_full_name"
+                tools:ignore="MissingClass,MissingConstraints">
+
+                <EditText
+                    android:id="@+id/edit_txt_mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawablePadding="10dip"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:text="0987654321"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:theme="@style/MyProfileEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_alter_mob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/olivedrab"
+                app:errorTextColor="@color/red"
+                app:hintTextColor="@color/olivedrab"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayout_mob"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_full_name"
+                tools:ignore="MissingClass,MissingConstraints">
+
+                <EditText
+                    android:id="@+id/edit_txt_alter_mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawablePadding="10dip"
+                    android:hint="@string/edit_txt_hint_alternate_mob"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:theme="@style/MyProfileEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_addr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/olivedrab"
+                app:errorTextColor="@color/red"
+                app:hintTextColor="@color/olivedrab"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_alter_mob"
+                tools:ignore="MissingClass,MissingConstraints"
+                tools:layout_editor_absoluteX="16dp">
+
+                <EditText
+                    android:id="@+id/edit_txt_addr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dip"
+                    android:hint="@string/edit_txt_hint_address1"
+                    android:inputType="textPostalAddress"
+                    android:lines="4"
+                    android:singleLine="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:theme="@style/MyProfileEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_addr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/olivedrab"
+                app:errorTextColor="@color/red"
+                app:hintTextColor="@color/olivedrab"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_addr1"
+                tools:ignore="MissingClass,MissingConstraints"
+                tools:layout_editor_absoluteX="16dp">
+
+                <EditText
+                    android:id="@+id/edit_txt_addr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawablePadding="10dip"
+                    android:hint="@string/edit_txt_hint_address2"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:theme="@style/MyProfileEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_addr3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/olivedrab"
+                app:errorTextColor="@color/red"
+                app:hintTextColor="@color/olivedrab"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_addr2"
+                tools:ignore="MissingClass,MissingConstraints"
+                tools:layout_editor_absoluteX="16dp">
+
+                <EditText
+                    android:id="@+id/edit_txt_addr3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawablePadding="10dip"
+                    android:hint="@string/edit_txt_hint_address3"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:theme="@style/MyProfileEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_addr4"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/olivedrab"
+                app:errorTextColor="@color/red"
+                app:hintTextColor="@color/olivedrab"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_addr3"
+                tools:ignore="MissingClass,MissingConstraints">
+
+                <EditText
+                    android:id="@+id/edit_txt_addr4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawablePadding="10dip"
+                    android:hint="@string/edit_txt_hint_address4"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:theme="@style/MyProfileEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_pincode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/olivedrab"
+                app:errorTextColor="@color/red"
+                app:hintTextColor="@color/olivedrab"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayout_addr4"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_addr3"
+                tools:ignore="MissingClass,MissingConstraints">
+
+                <EditText
+                    android:id="@+id/edit_txt_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawablePadding="10dip"
+                    android:hint="@string/edit_txt_hint_pincode"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:theme="@style/MyProfileEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_addr5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="@color/olivedrab"
+                app:errorTextColor="@color/red"
+                app:hintTextColor="@color/olivedrab"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_addr4"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingClass,MissingConstraints">
+
+                <EditText
+                    android:id="@+id/edit_txt_addr5"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawablePadding="10dip"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:text="@string/edit_txt_hint_address5"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:theme="@style/MyProfileEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/add_btn_backgd"
+            android:text="@string/profile_save_proceed"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
+
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

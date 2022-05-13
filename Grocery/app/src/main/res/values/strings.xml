@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Grocery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category">Category</string>
+    <string name="order">Order</string>
+    <string name="profile">Profile</string>
+    <string name="contact">Contact Us</string>
+    <string name="faq">FAQ</string>
+    <string name="drawerOpen">Open</string>
+    <string name="drawerClose">Close</string>
+
+    //LoginActivity
+    <string name="get_started">Get Started</string>
+    <string name="enter_login_data">Enter mobile number</string>
+    <string name="btn_login">Login</string>
+    <string name="subname">subCategory</string>
+
+    //NavigationView_header
+    <string name="hi_user">Hi User</string>
+
+    //Profile
+    <string name="profile_name">Name</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_mob">Mobile</string>
+    <string name="profile_addr">Address</string>
+    <string name="profile_save_proceed">Save &amp; Proceed</string>
+
+    //ItemsActivity
+    <string name="txt_empty_list">Oops! No Item Available</string>
+
+    //Dailog profile verify
+    <string name="txt_header_verify">Profile &amp; Address Verification</string>
+    <string name="edit_txt_hint_full_name">Full name</string>
+    <string name="edit_txt_hint_mob">Mobile number</string>
+    <string name="edit_txt_hint_alternate_mob">Alternate Mobile</string>
+    <string name="edit_txt_hint_address1">Flat,House no,building,company,apartment</string>
+    <string name="edit_txt_hint_address2">Area,Colony,Street,Sector,Village</string>
+    <string name="edit_txt_hint_address3">Landmark e.g.near post office</string>
+    <string name="edit_txt_hint_address4">Town/City</string>
+    <string name="edit_txt_hint_pincode">Pincode</string>
+    <string name="edit_txt_hint_address5">Maharashtra,India</string>
+    <string name="btn_save">Save &amp; Proceed</string>
+    <string name="btn_cancel">Cancel</string>
+
+
+</resources>

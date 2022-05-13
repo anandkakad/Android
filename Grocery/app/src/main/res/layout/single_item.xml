@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_food"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/txt_item_name"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_item"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_item_amount"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_item"
+        app:layout_constraintTop_toBottomOf="@+id/txt_item_quantity" />
+
+    <ImageView
+        android:id="@+id/btn_minu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/minu_imgview_backgd"
+        android:padding="5dp"
+        android:src="@drawable/ic_minu"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/img_item"
+        app:layout_constraintTop_toBottomOf="@+id/txt_item_name" />
+
+    <ImageView
+        android:id="@+id/btn_plus"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/minu_imgview_backgd"
+        android:padding="5dp"
+        android:src="@drawable/ic_add"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_item_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/txt_item_name" />
+
+    <TextView
+        android:id="@+id/txt_item_quantity"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:padding="2dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/btn_minu"
+        app:layout_constraintTop_toBottomOf="@+id/txt_item_name" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/add_btn_backgd"
+        android:text="Add"
+        android:textColor="@color/colorAccent"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_item_amount"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/remove_btn_backgd"
+        android:text="Remove"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_item_amount"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/img_item"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

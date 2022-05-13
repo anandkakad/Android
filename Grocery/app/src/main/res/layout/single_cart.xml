@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="16dp">
+
+
+    <ImageView
+        android:id="@+id/img_cart"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="1dp" />
+
+
+    <TextView
+        android:id="@+id/txt_cart_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:gravity="start"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_cart"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_cart_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:text="Rs"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn_cart_plus"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cart_name" />
+
+    <TextView
+        android:id="@+id/txt_cart_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txt_cart_currency"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cart_name" />
+
+    <ImageView
+        android:id="@+id/btn_cart_minu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/minu_imgview_backgd"
+        android:padding="5dp"
+        android:src="@drawable/ic_minu"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/img_cart"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cart_name" />
+
+    <ImageView
+        android:id="@+id/btn_cart_plus"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/minu_imgview_backgd"
+        android:padding="5dp"
+        android:src="@drawable/ic_add"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_cart_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cart_name" />
+
+    <TextView
+        android:id="@+id/txt_cart_quantity"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cart_minu"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cart_name" />
+
+
+    <ImageView
+        android:id="@+id/imgview_cart_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_cart_amount"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cart_name"
+        android:background="@drawable/ic_delete_forever"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/img_cart"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
